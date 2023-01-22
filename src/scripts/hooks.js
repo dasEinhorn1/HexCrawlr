@@ -12,7 +12,7 @@ export function init() {
 }
 
 function registerLayers() {
-    CONFIG.Canvas.layers.hexcrawlr = {layerClass: HexCrawlLayer, group: "interface"}
+    CONFIG.Canvas.layers.hexcrawl = {layerClass: HexCrawlLayer, group: "interface"}
 }
 
 function registerHooks() {
@@ -28,9 +28,9 @@ export function ready() {
     
     const hm = HexMap("testmap", game.canvas.grid)
     
-    hm.setHex({x: 1, y: 1}, "Spoopy")
-    let {x, y}= hm.getWorldPosition(10, 10)
-    hm.addHighlight(x, y);
+    // hm.setHex({x: 1, y: 1}, "Spoopy")
+    // let {x, y}= hm.getWorldPosition(10, 10)
+    // hm.addHighlight(x, y);
 
     const hs = HexSelector(hm, {
         onChange(selected) {
@@ -41,7 +41,7 @@ export function ready() {
         }
     });
 
-    hs.startSelection(canvas, Hooks);
+    // hs.startSelection(canvas, Hooks);
 
     window.HEXCRAWL = {
         hm,
