@@ -1,0 +1,25 @@
+{
+  "id": "hexcrawlr",
+  "title": "hexcrawlr",
+  "description": "A module for tracking a hex crawl.",
+  "authors": [
+    {
+    "name": "DasEinhorn"
+    }
+  ],
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "9",
+    "verified": "10"
+  },
+  "esmodules": [
+    "./src/index.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "./lang/en.json"
+    }
+  ]
+}
